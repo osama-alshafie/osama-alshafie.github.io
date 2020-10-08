@@ -1,0 +1,312 @@
+/*   in general   */
+.bg_black {
+    background-color: black;
+    color: aliceblue;
+}
+.bd_light_white {
+    border: 3px solid #eee;
+}
+.bd_sides_rd {
+    border-radius: 45px;
+}
+.bg_cyber_security_image {
+    background-image: url("/img/cyber-security.jpg");
+}
+
+
+body {
+    background: url("../img/cyber-security.jpg") no-repeat center center fixed;
+    background-color: black;
+    background-size: cover;
+}
+
+/*   intro section style   */
+.intro_section {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+/*   main section style   */
+.main_section .main_head .logo {
+    font-family: cursive;
+}
+ 
+
+
+/*  result section style   */
+.result_section {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+
+
+/* Custom, iPhone Retina  */ 
+/* Extra Small Devices, Phones */ 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    /*   intro section style   */
+    /*  result section style   */
+    .intro_section .intro_section_content,
+    .result_section .result_section_content{
+        position: absolute;
+        top: 10%;
+
+        background-color: rgba(0,0,0,0.6);
+        color: azure;
+    }
+
+    .intro_section .intro_section_content h1,
+    .result_section .result_section_content h1 {
+        font-family: cursive;
+    }
+
+    .intro_section .intro_section_content .start_btn,
+    .result_section .result_section_content .play_game_btn {
+        width: 80%;
+        font-size: 1.2em;
+        font-weight: 700;
+        border-radius: 10px;
+        background-color: darkgoldenrod;
+        color: azure;
+        outline: none;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .intro_section .intro_section_content .start_btn:hover,
+    .result_section .result_section_content .play_game_btn:hover {
+        background-color: azure;
+        color: darkgoldenrod;
+    }
+    
+    /*   header section style   */
+    .header_section {
+        color: azure;
+        font-weight: 700;
+        font-size: 1.2em;
+        margin: 10px;
+    }
+    .header_section p {
+        margin: 5px 0px;
+    }
+    
+    /*   main section style   */
+    .main_section .main_head {
+        font-size: 3em;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: azure;
+    }
+    
+    .main_section .game_input_fields {
+        margin-top: 0px;
+    }
+    
+    .main_section .game_input_fields input {
+        width: 50px;
+        height: 50px;
+        border: 1px solid aliceblue;
+        border-radius: 10%;
+        margin-left: 7px;
+        margin-right: 7px;
+        color: black;
+        text-align: center;
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    
+    .main_section .game_input_fields input:focus {
+        border-color: skyblue;
+        outline: none;
+    }
+
+    .main_section .main_footer {
+        margin-top: 15px;
+        color: azure;
+    }
+
+    .main_section .main_footer i {
+        font-size: 3em;
+        font-weight: 900;
+        cursor: pointer;
+    }
+    
+    /*   game chances section style   */
+    .game_chances_section {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    
+    .game_chances_section .chance_card {
+        background-color: rgba(0,0,0,0.6);
+        width: 80%;
+        height: 120px;
+        border-radius: 5px;
+        padding-right: 10%;
+        padding-left: 10%;
+        margin: 10px auto;
+    }
+    
+    .game_chances_section .chance_card .card_digits {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .game_chances_section .chance_card .card_digits span {
+        background-color: white;
+        padding: 0px 5px;
+        border-radius: 10%;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: black;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    .game_chances_section .chance_card .card_discription {
+        color: azure;
+        font-size: 1.2em;
+    }
+    
+}
+
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 769px) {
+    /*   intro section style   */
+    /*  result section style   */
+    .intro_section .intro_section_content,
+    .result_section .result_section_content {
+        position: absolute;
+        top: 30%;
+
+        background-color: rgba(0,0,0,0.6);
+        color: azure;
+    }
+
+    .intro_section .intro_section_content h1,
+    .result_section .result_section_content h1 {
+        font-family: cursive;
+    }
+
+    .intro_section .intro_section_content .start_btn,
+    .result_section .result_section_content .play_game_btn {
+        width: 50%;
+        font-size: 2em;
+        font-weight: 700;
+        border-radius: 15px;
+        background-color: darkgoldenrod;
+        color: azure;
+        outline: none;
+        margin: 30px 10px 20px 10px;
+    }
+
+    .intro_section .intro_section_content .start_btn:hover,
+    .result_section .result_section_content .play_game_btn:hover {
+        background-color: azure;
+        color: darkgoldenrod;
+    }
+    
+    /*   header section style   */
+    .header_section {
+        color: azure;
+        font-weight: 700;
+        font-size: 2em;
+        margin-top: 25px;
+    }
+    .header_section p {
+        margin: 5px 0px;
+    }
+    
+    /*   main section style   */
+    .main_section .main_head {
+        font-size: 5em;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        color: azure;
+    }
+
+    .main_section .game_input_fields {
+        margin-top: 25px;
+    }
+    
+    .main_section .game_input_fields input {
+        width: 70px;
+        height: 70px;
+        border: 1px solid aliceblue;
+        border-radius: 15%;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: black;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+    .main_section .game_input_fields input:focus {
+        border-color: skyblue;
+        outline: none;
+    }
+
+    .main_section .main_footer {
+        margin-top: 25px;
+        color: azure;
+    }
+
+    .main_section .main_footer i {
+        font-size: 70px;
+        cursor: pointer;
+    }
+    
+    .main_section .main_footer i:hover {
+        color: darkgoldenrod;
+    }
+    
+    /*   game chances section style   */
+    .game_chances_section {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .game_chances_section .chance_card {
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 7px;
+        padding-right: 10%;
+        padding-left: 10%;
+        width: 80%;
+        height: 180px;
+        margin: 10px auto;
+    }
+
+    .game_chances_section .chance_card .card_digits {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .game_chances_section .chance_card .card_digits span {
+        background-color: white;
+        padding: 0px 5px;
+        border-radius: 15%;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: black;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    .game_chances_section .chance_card .card_discription {
+        color: azure;
+        font-size: 1.5em;
+    }
+    
+}
+

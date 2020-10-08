@@ -1,0 +1,128 @@
+/*   in general   */
+.btn_darkmagenta_azure {
+    background-color: darkgoldenrod;
+    color: azure;
+}
+
+.btn_darkmagenta_azure {
+    background-color: darkmagenta;
+    color: azure;
+}
+
+.btn_darkgreen_azure {
+    background-color: darkgreen;
+    color: azure;
+}
+.btn_darkgreen_azure:hover {
+    background-color: azure;
+    color: darkgreen;
+}
+
+.btn_darkred_azure {
+    background-color: darkred;
+    color: azure;
+}
+.btn_darkred_azure:hover {
+    background-color: azure;
+    color: darkred;
+}
+
+body {
+    background: url("../img/cyber-security.jpg") no-repeat center center fixed;
+    background-color: black;
+    background-size: cover;
+}
+
+#helpModalLabel {
+    font-family: fantasy;
+    font-size: 2em;
+    font-weight: 700;
+    color: darkgoldenrod;
+}
+
+.help_body {
+    font-family: fantasy;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: darkred;
+}
+
+.help_body i {
+    background-color: black;
+    color: azure;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina  */ 
+/* Extra Small Devices, Phones */ 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    /*   intro section style   */
+    .intro_section {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .intro_section .intro_section_content {
+        position: absolute;
+        top: 15%;
+
+        background-color: rgba(0,0,0,0.6);
+        color: azure;
+    }
+
+    .intro_section .intro_section_content h1 {
+        font-family: cursive;
+    }
+
+    .intro_section .intro_section_content .intro_btn {
+        width: 25%;
+        font-size: 1.2em;
+        font-weight: 700;
+        border-radius: 10px;
+        outline: none;
+        margin: 10px 10px 10px 10px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 769px) {
+    /*   intro section style   */
+    .intro_section {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .intro_section .intro_section_content {
+        position: absolute;
+        top: 30%;
+
+        background-color: rgba(0,0,0,0.6);
+        color: azure;
+    }
+
+    .intro_section .intro_section_content h1 {
+        font-family: cursive;
+        font-size: 4em;
+    }
+
+    .intro_section .intro_section_content .intro_btn {
+        width: 25%;
+        font-size: 2em;
+        font-weight: 700;
+        border-radius: 15px;
+        outline: none;
+        margin: 30px 10px 20px 10px;
+    }
+}
+
+

@@ -1,0 +1,9 @@
+body{
+    padding-top: 70px;
+}
+
+/*             overriding Bootstrap              */
+/*      carousel section         */
+.carousel > .carousel-inner > .item {
+    max-height: 400px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html/>
+<html>
+    <head>
+        <title>Osama AL-shafie</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aref+Ruqaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lalezar">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+        <link rel="stylesheet" href="css/style.css"/>
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+        <!-- start head section -->
+        <section class="header_section text-center">
+            <div class='container bd_light_white bd_sides_rd'>
+                <div class='row'>
+                    <div class='col-sm-4 header_level'>
+                        <p>Level: <span>5</span></p>
+                    </div>
+                    <div class='col-sm-4'>
+                        <p>Chances: <span>6</span></p>
+                    </div>
+                    <div class='col-sm-4'>
+                        <p>Timer: <span id="timer_span">08:00</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end head section -->
+        
+        <!-- start main section -->
+        <section class="main_section container text-center">
+            <div class="row">
+                <div class="main_head col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <div class="logo">CodeBreaker</div>
+                </div>
+                
+                <div class="game_input_fields col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <input type="text" class="input_field_control" id="game_input_1"/>
+                    <input type="text" class="input_field_control" id="game_input_2"/>
+                    <input type="text" class="input_field_control" id="game_input_3"/>
+                </div>
+                
+                <div class="main_footer col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+        <!-- end main section -->
+        
+        <!-- end game chances section -->
+        <section class="game_chances_section container text-center">
+            <div id="game_chances_container" class="row">
+                <div class="col-sm-4">
+                    <div class="chance_card">
+                        <div class="card_digits">
+                            <span>2</span>
+                            <span>4</span>
+                            <span>7</span>
+                        </div>
+                        <div class="card_discription">
+                            <p>One number is correct and well placed.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="chance_card">
+                        <div class="card_digits">
+                            <span>4</span>
+                            <span>2</span>
+                            <span>3</span>
+                        </div>
+                        <div class="card_discription">
+                            <p>Two numbers are correct and wrong placed.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="chance_card">
+                        <div class="card_digits">
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                        </div>
+                        <div class="card_discription">
+                            <p>One number is correct and wrong placed.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-offset-2 col-sm-4">
+                    <div class="chance_card">
+                        <div class="card_digits">
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                        </div>
+                        <div class="card_discription">
+                            <p>Nothing is correct.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="chance_card">
+                        <div class="card_digits">
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                        </div>
+                        <div class="card_discription">
+                            <p>One number is correct and wrong placed.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- end game chances section -->
+        
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

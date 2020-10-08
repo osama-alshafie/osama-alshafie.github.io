@@ -1,0 +1,57 @@
+body{
+    padding-top: 70px;
+}
+/*    NavBar    */
+.navbar {
+    min-height: 70px;
+}
+/*   active link   */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #e41b17;
+}
+/*   normal links   */
+.navbar-inverse .navbar-nav > li > a {
+    color: #bbb;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+/*   brand name   */
+.navbar-inverse .navbar-brand {
+    color: #bbb;
+    font-size: 30px;
+    line-height: 40px;
+}
+/*   dropdown menu   */
+.dropdown-menu {
+    background-color: #333;
+    border-top: 3px solid #e41b17;
+    min-width: 200px;
+}
+.navbar-right .dropdown-menu{
+    left: 0px;
+    right: auto;
+}
+.dropdown-menu > li > a {
+    color: #fff;
+    padding: 6px 20px;
+    -webkit-transition: padding o.5s ease;
+    -moz-transition: padding o.5s ease;
+    -o-transition: padding o.5s ease;
+    transition: padding o.5s ease;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: #e41b17;
+    color: #fff;
+    padding: 20px;
+}
+.dropdown-menu .divider {
+    background-color: #871818;
+}
+/*   navbar toggle   */
+.navbar-toggle{
+    margin-top: 18px;
+}
