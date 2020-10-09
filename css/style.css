@@ -1,4 +1,14 @@
 /*   in general   */
+.btn_darkmagenta_azure {
+    background-color: darkgoldenrod;
+    color: azure;
+}
+
+.btn_darkmagenta_azure:hover {
+    background-color: azure;
+    color: darkgoldenrod;
+}
+
 .bg_black {
     background-color: black;
     color: aliceblue;
@@ -32,8 +42,6 @@ body {
 .main_section .main_head .logo {
     font-family: cursive;
 }
- 
-
 
 /*  result section style   */
 .result_section {
@@ -134,6 +142,14 @@ body {
         font-size: 3em;
         font-weight: 900;
         cursor: pointer;
+    }
+    
+    .main_section .main_footer .btn_save_chance {
+        width: 50%;
+        font-size: 1.2em;
+        font-weight: 700;
+        border-radius: 10px;
+        outline: none;
     }
     
     /*   game chances section style   */
@@ -267,6 +283,14 @@ body {
     
     .main_section .main_footer i:hover {
         color: darkgoldenrod;
+    }
+    
+    .main_section .main_footer .btn_save_chance {
+        width: 35%;
+        font-size: 1.5em;
+        font-weight: 700;
+        border-radius: 15px;
+        outline: none;
     }
     
     /*   game chances section style   */

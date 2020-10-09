@@ -317,11 +317,11 @@ function drawMainSection() {
     mainFooterDiv.setAttribute("class", "main_footer col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2");
     row.appendChild(mainFooterDiv);
     
-    var footerI = document.createElement("i");
-    footerI.setAttribute("class", "fa fa-code");
-    footerI.setAttribute("id", "submit_chance");
-    footerI.setAttribute("aria-hidden", "true");
-    mainFooterDiv.appendChild(footerI);
+    var footerSaveButton = document.createElement("button");
+    footerSaveButton.setAttribute("class", "btn btn-lg btn_darkmagenta_azure btn_save_chance");
+    footerSaveButton.setAttribute("id", "submit_chance");
+    footerSaveButton.innerHTML = "???";
+    mainFooterDiv.appendChild(footerSaveButton);
 }
 
 // draw chances section.
@@ -413,7 +413,6 @@ function getCSJ(codeOfChacnce) {
             csj.w++;
         }
     }
-    console.log("csj: " + csj.rr + " , " + csj.rw + " , " + csj.w);
     return csj;
 }
 
@@ -432,32 +431,18 @@ function initializeGame(levelNumber, chancesCount, totalTime, cpr=3) {
     cardsPerRow = cpr;
     initializeOffset();
     codeLength = 3;
-    console.log("offsetPointer: " + offsetPointer);
-    console.log("offsetSpace: " + offsetSpace);
     
     generateCode();
-    console.log("code: " + code);
 }
 
 $(document).ready(function(){
     "use strict";
-//    var qs = decodeURIComponent(window.location.search.split("?")[1]).split("&");
-//    var urlLevel = 1;
-//    for(var i=0; i<qs.length; i++) {
-//        var qsi = qs[i].split("=");
-//        if(qsi[0] == "level") {
-//            urlLevel = parseInt(qsi[1]);
-//        }
-//    }
-//    
-//    $(".level_number").html(urlLevel);
-    console.log('do you ready....');
+
     drawIntroSection(1);
     
     
     // when cleck btn in intro section.
     $("#gp_container").on("click", ".intro_section .intro_section_content #start_game", function(){
-        console.log('Starting.');
         var urlLevel = parseInt($(this).attr("data-level"));
         
         $("#gp_container").html("");
@@ -477,7 +462,6 @@ $(document).ready(function(){
     });
     
     $("#gp_container").on("click", ".main_section .main_footer #submit_chance", function(){
-        console.log("value: " + this.value);
         var fields = []
         var valid = true;
         $(".input_field_control").each(function(i,e){
@@ -486,19 +470,15 @@ $(document).ready(function(){
             }
             fields.push(parseInt(e.value));
         });
-        console.log("fields: " + fields);
-        console.log("valid: " + valid);
         
         if(valid) {
             var cSJson = getCSJ(fields);
             if(cSJson.rr == codeLength) {
                 // done right code.
-                console.log("Done.");
                 // call win fun.
                 won();
             } else if(currentChance == chances) {
                 // finish last wrong code.
-                console.log("Game over.");
                 // call game over fun.
                 //drawChanceCard(fields, "", currentChance == offsetPointer);
                 decreaseChances();
